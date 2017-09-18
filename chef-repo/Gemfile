@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+gem 'chef', "12.7.2"
+gem 'knife-zero'
+#gem 'knife-ec2'#, :github => 'opscode/knife-ec2'
+#gem 'knife-essentials'
