@@ -1,0 +1,34 @@
+DEPENDENCIES
+  java
+  nginx
+  tomcat
+
+GRAPH
+  apt (6.1.4)
+  build-essential (8.0.3)
+    mingw (>= 1.1)
+    seven_zip (>= 0.0.0)
+  compat_resource (12.19.0)
+  homebrew (4.2.0)
+  java (1.50.0)
+    apt (>= 0.0.0)
+    homebrew (>= 0.0.0)
+    windows (>= 0.0.0)
+  mingw (2.0.1)
+    seven_zip (>= 0.0.0)
+  nginx (7.0.0)
+    build-essential (>= 0.0.0)
+    compat_resource (>= 12.16.3)
+    ohai (>= 4.1.0)
+    yum-epel (>= 0.0.0)
+    zypper (>= 0.0.0)
+  ohai (5.2.0)
+  seven_zip (2.0.2)
+    windows (>= 1.2.2)
+  tomcat (2.5.2)
+    compat_resource (>= 12.16)
+  windows (3.1.2)
+    ohai (>= 4.0.0)
+  yum-epel (2.1.2)
+    compat_resource (>= 12.16.3)
+  zypper (0.4.0)

@@ -1,0 +1,306 @@
+{
+  "name": "ip-10-51-1-150.us-west-2.compute.internal",
+  "override": {
+    "java": {
+      "jdk_version": "8"
+    }
+  },
+  "normal": {
+    "knife_zero": {
+      "host": "52.41.47.19"
+    },
+    "tags": [
+
+    ]
+  },
+  "default": {
+    "apt": {
+      "cacher_dir": "/var/cache/apt-cacher-ng",
+      "cacher_interface": null,
+      "cacher_port": 3142,
+      "compiletime": false,
+      "compile_time_update": false,
+      "key_proxy": "",
+      "periodic_update_min_delay": 86400,
+      "launchpad_api_version": "1.0",
+      "unattended_upgrades": {
+        "enable": false,
+        "update_package_lists": true,
+        "allowed_origins": [
+          "Ubuntu xenial"
+        ],
+        "origins_patterns": [
+
+        ],
+        "package_blacklist": [
+
+        ],
+        "auto_fix_interrupted_dpkg": false,
+        "minimal_steps": false,
+        "install_on_shutdown": false,
+        "mail": null,
+        "mail_only_on_error": true,
+        "remove_unused_dependencies": false,
+        "automatic_reboot": false,
+        "automatic_reboot_time": "now",
+        "dl_limit": null,
+        "random_sleep": null
+      },
+      "cacher_client": {
+        "cacher_server": {
+
+        }
+      },
+      "confd": {
+        "force_confask": false,
+        "force_confdef": false,
+        "force_confmiss": false,
+        "force_confnew": false,
+        "force_confold": false,
+        "install_recommends": true,
+        "install_suggests": false
+      }
+    },
+    "homebrew": {
+      "owner": null,
+      "auto-update": true,
+      "casks": [
+
+      ],
+      "formulas": [
+
+      ],
+      "taps": [
+
+      ],
+      "installer": {
+        "url": "https://raw.githubusercontent.com/Homebrew/install/master/install",
+        "checksum": null
+      },
+      "enable-analytics": true
+    },
+    "windows": {
+      "rubyzipversion": null
+    },
+    "java": {
+      "jdk_version": "6",
+      "arch": "x86_64",
+      "openjdk_packages": [
+        "openjdk-8-jdk",
+        "openjdk-8-jre-headless"
+      ],
+      "openjdk_version": null,
+      "accept_license_agreement": false,
+      "set_default": true,
+      "alternatives_priority": 1062,
+      "set_etc_environment": false,
+      "use_alt_suffix": true,
+      "reset_alternatives": true,
+      "ark_retries": 0,
+      "ark_retry_delay": 2,
+      "ark_timeout": 600,
+      "ark_download_timeout": 600,
+      "install_flavor": "openjdk",
+      "oracle": {
+        "accept_oracle_download_terms": false,
+        "jce": {
+          "enabled": false,
+          "8": {
+            "url": "https://edelivery.oracle.com/otn-pub/java/jce/8/jce_policy-8.zip",
+            "checksum": "f3020a3922efd6626c2fff45695d527f34a8020e938a49292561f18ad1320b59"
+          },
+          "7": {
+            "url": "https://edelivery.oracle.com/otn-pub/java/jce/7/UnlimitedJCEPolicyJDK7.zip",
+            "checksum": "7a8d790e7bd9c2f82a83baddfae765797a4a56ea603c9150c87b7cdb7800194d"
+          },
+          "6": {
+            "url": "https://edelivery.oracle.com/otn-pub/java/jce_policy/6/jce_policy-6.zip",
+            "checksum": "d0c2258c3364120b4dbf7dd1655c967eee7057ac6ae6334b5ea8ceb8bafb9262"
+          },
+          "home": "/opt/java_jce"
+        }
+      },
+      "jdk": {
+        "6": {
+          "bin_cmds": [
+            "appletviewer",
+            "apt",
+            "ControlPanel",
+            "extcheck",
+            "HtmlConverter",
+            "idlj",
+            "jar",
+            "jarsigner",
+            "java",
+            "javac",
+            "javadoc",
+            "javah",
+            "javap",
+            "javaws",
+            "jconsole",
+            "jcontrol",
+            "jdb",
+            "jhat",
+            "jinfo",
+            "jmap",
+            "jps",
+            "jrunscript",
+            "jsadebugd",
+            "jstack",
+            "jstat",
+            "jstatd",
+            "jvisualvm",
+            "keytool",
+            "native2ascii",
+            "orbd",
+            "pack200",
+            "policytool",
+            "rmic",
+            "rmid",
+            "rmiregistry",
+            "schemagen",
+            "serialver",
+            "servertool",
+            "tnameserv",
+            "unpack200",
+            "wsgen",
+            "wsimport",
+            "xjc"
+          ],
+          "x86_64": {
+            "url": "http://download.oracle.com/otn/java/jdk/6u45-b06/jdk-6u45-linux-x64.bin",
+            "checksum": "6b493aeab16c940cae9e3d07ad2a5c5684fb49cf06c5d44c400c7993db0d12e8"
+          },
+          "i586": {
+            "url": "http://download.oracle.com/otn/java/jdk/6u45-b06/jdk-6u45-linux-i586.bin",
+            "checksum": "d53b5a2518d80e1d95565f0adda54eee229dc5f4a1d1a3c2f7bf5045b168a357"
+          }
+        },
+        "7": {
+          "bin_cmds": [
+            "appletviewer",
+            "apt",
+            "ControlPanel",
+            "extcheck",
+            "idlj",
+            "jar",
+            "jarsigner",
+            "java",
+            "javac",
+            "javadoc",
+            "javafxpackager",
+            "javah",
+            "javap",
+            "javaws",
+            "jcmd",
+            "jconsole",
+            "jcontrol",
+            "jdb",
+            "jhat",
+            "jinfo",
+            "jmap",
+            "jps",
+            "jrunscript",
+            "jsadebugd",
+            "jstack",
+            "jstat",
+            "jstatd",
+            "jvisualvm",
+            "keytool",
+            "native2ascii",
+            "orbd",
+            "pack200",
+            "policytool",
+            "rmic",
+            "rmid",
+            "rmiregistry",
+            "schemagen",
+            "serialver",
+            "servertool",
+            "tnameserv",
+            "unpack200",
+            "wsgen",
+            "wsimport",
+            "xjc"
+          ],
+          "x86_64": {
+            "url": "http://download.oracle.com/otn/java/jdk/7u75-b13/jdk-7u75-linux-x64.tar.gz",
+            "checksum": "6f1f81030a34f7a9c987f8b68a24d139"
+          },
+          "i586": {
+            "url": "http://download.oracle.com/otn/java/jdk/7u75-b13/jdk-7u75-linux-i586.tar.gz",
+            "checksum": "e4371a4fddc049eca3bfef293d812b8e"
+          }
+        },
+        "8": {
+          "bin_cmds": [
+            "appletviewer",
+            "apt",
+            "ControlPanel",
+            "extcheck",
+            "idlj",
+            "jar",
+            "jarsigner",
+            "java",
+            "javac",
+            "javadoc",
+            "javafxpackager",
+            "javah",
+            "javap",
+            "javaws",
+            "jcmd",
+            "jconsole",
+            "jcontrol",
+            "jdb",
+            "jdeps",
+            "jhat",
+            "jinfo",
+            "jjs",
+            "jmap",
+            "jmc",
+            "jps",
+            "jrunscript",
+            "jsadebugd",
+            "jstack",
+            "jstat",
+            "jstatd",
+            "jvisualvm",
+            "keytool",
+            "native2ascii",
+            "orbd",
+            "pack200",
+            "policytool",
+            "rmic",
+            "rmid",
+            "rmiregistry",
+            "schemagen",
+            "serialver",
+            "servertool",
+            "tnameserv",
+            "unpack200",
+            "wsgen",
+            "wsimport",
+            "xjc"
+          ],
+          "x86_64": {
+            "url": "https://edelivery.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.tar.gz",
+            "checksum": "62b215bdfb48bace523723cdbb2157c665e6a25429c73828a32f00e587301236"
+          },
+          "i586": {
+            "url": "https://edelivery.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-i586.tar.gz",
+            "checksum": "2012d1c82f74bf830a80dfb5462f555b22271f74e4fc4a5779c7f459dcd0cabf"
+          }
+        }
+      },
+      "java_home": "/usr/lib/jvm/java-8-openjdk-amd64"
+    }
+  },
+  "automatic": {
+    "  ec2": {
+
+    }
+  },
+  "run_list": [
+    "recipe[demo-tomcat]"
+  ]
+}

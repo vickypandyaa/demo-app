@@ -1,0 +1,638 @@
+{
+  "name": "ip-10-51-1-187.us-west-2.compute.internal",
+  "override": {
+    "java": {
+      "jdk_version": "8"
+    }
+  },
+  "normal": {
+    "knife_zero": {
+      "host": "52.41.11.180"
+    },
+    "tags": [
+
+    ]
+  },
+  "default": {
+    "apt": {
+      "cacher_dir": "/var/cache/apt-cacher-ng",
+      "cacher_interface": null,
+      "cacher_port": 3142,
+      "compiletime": false,
+      "compile_time_update": false,
+      "key_proxy": "",
+      "periodic_update_min_delay": 86400,
+      "launchpad_api_version": "1.0",
+      "unattended_upgrades": {
+        "enable": false,
+        "update_package_lists": true,
+        "allowed_origins": [
+          "Ubuntu xenial"
+        ],
+        "origins_patterns": [
+
+        ],
+        "package_blacklist": [
+
+        ],
+        "auto_fix_interrupted_dpkg": false,
+        "minimal_steps": false,
+        "install_on_shutdown": false,
+        "mail": null,
+        "mail_only_on_error": true,
+        "remove_unused_dependencies": false,
+        "automatic_reboot": false,
+        "automatic_reboot_time": "now",
+        "dl_limit": null,
+        "random_sleep": null
+      },
+      "cacher_client": {
+        "cacher_server": {
+
+        }
+      },
+      "confd": {
+        "force_confask": false,
+        "force_confdef": false,
+        "force_confmiss": false,
+        "force_confnew": false,
+        "force_confold": false,
+        "install_recommends": true,
+        "install_suggests": false
+      }
+    },
+    "homebrew": {
+      "owner": null,
+      "auto-update": true,
+      "casks": [
+
+      ],
+      "formulas": [
+
+      ],
+      "taps": [
+
+      ],
+      "installer": {
+        "url": "https://raw.githubusercontent.com/Homebrew/install/master/install",
+        "checksum": null
+      },
+      "enable-analytics": true
+    },
+    "windows": {
+      "rubyzipversion": null
+    },
+    "java": {
+      "jdk_version": "6",
+      "arch": "x86_64",
+      "openjdk_packages": [
+        "openjdk-8-jdk",
+        "openjdk-8-jre-headless"
+      ],
+      "openjdk_version": null,
+      "accept_license_agreement": false,
+      "set_default": true,
+      "alternatives_priority": 1062,
+      "set_etc_environment": false,
+      "use_alt_suffix": true,
+      "reset_alternatives": true,
+      "ark_retries": 0,
+      "ark_retry_delay": 2,
+      "ark_timeout": 600,
+      "ark_download_timeout": 600,
+      "install_flavor": "openjdk",
+      "oracle": {
+        "accept_oracle_download_terms": false,
+        "jce": {
+          "enabled": false,
+          "8": {
+            "url": "https://edelivery.oracle.com/otn-pub/java/jce/8/jce_policy-8.zip",
+            "checksum": "f3020a3922efd6626c2fff45695d527f34a8020e938a49292561f18ad1320b59"
+          },
+          "7": {
+            "url": "https://edelivery.oracle.com/otn-pub/java/jce/7/UnlimitedJCEPolicyJDK7.zip",
+            "checksum": "7a8d790e7bd9c2f82a83baddfae765797a4a56ea603c9150c87b7cdb7800194d"
+          },
+          "6": {
+            "url": "https://edelivery.oracle.com/otn-pub/java/jce_policy/6/jce_policy-6.zip",
+            "checksum": "d0c2258c3364120b4dbf7dd1655c967eee7057ac6ae6334b5ea8ceb8bafb9262"
+          },
+          "home": "/opt/java_jce"
+        }
+      },
+      "jdk": {
+        "6": {
+          "bin_cmds": [
+            "appletviewer",
+            "apt",
+            "ControlPanel",
+            "extcheck",
+            "HtmlConverter",
+            "idlj",
+            "jar",
+            "jarsigner",
+            "java",
+            "javac",
+            "javadoc",
+            "javah",
+            "javap",
+            "javaws",
+            "jconsole",
+            "jcontrol",
+            "jdb",
+            "jhat",
+            "jinfo",
+            "jmap",
+            "jps",
+            "jrunscript",
+            "jsadebugd",
+            "jstack",
+            "jstat",
+            "jstatd",
+            "jvisualvm",
+            "keytool",
+            "native2ascii",
+            "orbd",
+            "pack200",
+            "policytool",
+            "rmic",
+            "rmid",
+            "rmiregistry",
+            "schemagen",
+            "serialver",
+            "servertool",
+            "tnameserv",
+            "unpack200",
+            "wsgen",
+            "wsimport",
+            "xjc"
+          ],
+          "x86_64": {
+            "url": "http://download.oracle.com/otn/java/jdk/6u45-b06/jdk-6u45-linux-x64.bin",
+            "checksum": "6b493aeab16c940cae9e3d07ad2a5c5684fb49cf06c5d44c400c7993db0d12e8"
+          },
+          "i586": {
+            "url": "http://download.oracle.com/otn/java/jdk/6u45-b06/jdk-6u45-linux-i586.bin",
+            "checksum": "d53b5a2518d80e1d95565f0adda54eee229dc5f4a1d1a3c2f7bf5045b168a357"
+          }
+        },
+        "7": {
+          "bin_cmds": [
+            "appletviewer",
+            "apt",
+            "ControlPanel",
+            "extcheck",
+            "idlj",
+            "jar",
+            "jarsigner",
+            "java",
+            "javac",
+            "javadoc",
+            "javafxpackager",
+            "javah",
+            "javap",
+            "javaws",
+            "jcmd",
+            "jconsole",
+            "jcontrol",
+            "jdb",
+            "jhat",
+            "jinfo",
+            "jmap",
+            "jps",
+            "jrunscript",
+            "jsadebugd",
+            "jstack",
+            "jstat",
+            "jstatd",
+            "jvisualvm",
+            "keytool",
+            "native2ascii",
+            "orbd",
+            "pack200",
+            "policytool",
+            "rmic",
+            "rmid",
+            "rmiregistry",
+            "schemagen",
+            "serialver",
+            "servertool",
+            "tnameserv",
+            "unpack200",
+            "wsgen",
+            "wsimport",
+            "xjc"
+          ],
+          "x86_64": {
+            "url": "http://download.oracle.com/otn/java/jdk/7u75-b13/jdk-7u75-linux-x64.tar.gz",
+            "checksum": "6f1f81030a34f7a9c987f8b68a24d139"
+          },
+          "i586": {
+            "url": "http://download.oracle.com/otn/java/jdk/7u75-b13/jdk-7u75-linux-i586.tar.gz",
+            "checksum": "e4371a4fddc049eca3bfef293d812b8e"
+          }
+        },
+        "8": {
+          "bin_cmds": [
+            "appletviewer",
+            "apt",
+            "ControlPanel",
+            "extcheck",
+            "idlj",
+            "jar",
+            "jarsigner",
+            "java",
+            "javac",
+            "javadoc",
+            "javafxpackager",
+            "javah",
+            "javap",
+            "javaws",
+            "jcmd",
+            "jconsole",
+            "jcontrol",
+            "jdb",
+            "jdeps",
+            "jhat",
+            "jinfo",
+            "jjs",
+            "jmap",
+            "jmc",
+            "jps",
+            "jrunscript",
+            "jsadebugd",
+            "jstack",
+            "jstat",
+            "jstatd",
+            "jvisualvm",
+            "keytool",
+            "native2ascii",
+            "orbd",
+            "pack200",
+            "policytool",
+            "rmic",
+            "rmid",
+            "rmiregistry",
+            "schemagen",
+            "serialver",
+            "servertool",
+            "tnameserv",
+            "unpack200",
+            "wsgen",
+            "wsimport",
+            "xjc"
+          ],
+          "x86_64": {
+            "url": "https://edelivery.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.tar.gz",
+            "checksum": "62b215bdfb48bace523723cdbb2157c665e6a25429c73828a32f00e587301236"
+          },
+          "i586": {
+            "url": "https://edelivery.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-i586.tar.gz",
+            "checksum": "2012d1c82f74bf830a80dfb5462f555b22271f74e4fc4a5779c7f459dcd0cabf"
+          }
+        }
+      },
+      "java_home": "/usr/lib/jvm/java-8-openjdk-amd64"
+    },
+    "seven_zip": {
+      "url": "http://www.7-zip.org/a/7z1514-x64.msi",
+      "checksum": "cefe1a9092d8a6be68468c33910d6206b40e934fb63cab686c5cccf369fbf712",
+      "package_name": "7-Zip 15.14 (x64 edition)",
+      "default_extract_timeout": 600
+    },
+    "build-essential": {
+      "compile_time": false,
+      "msys2": {
+        "path": "\\msys2"
+      }
+    },
+    "yum-epel": {
+      "repos": [
+        "epel",
+        "epel-debuginfo",
+        "epel-source",
+        "epel-testing",
+        "epel-testing-debuginfo",
+        "epel-testing-source"
+      ]
+    },
+    "yum": {
+      "epel-debuginfo": {
+        "repositoryid": "epel-debuginfo",
+        "description": "Extra Packages for 16 - $basearch - Debug",
+        "mirrorlist": "http://mirrors.fedoraproject.org/mirrorlist?repo=epel-debug-16&arch=$basearch",
+        "gpgkey": "https://download.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-16",
+        "failovermethod": "priority",
+        "gpgcheck": true,
+        "enabled": false,
+        "managed": false,
+        "make_cache": true
+      },
+      "epel-source": {
+        "repositoryid": "epel-source",
+        "description": "Extra Packages for 16 - $basearch - Source",
+        "mirrorlist": "http://mirrors.fedoraproject.org/mirrorlist?repo=epel-source-16&arch=$basearch",
+        "gpgkey": "https://download.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-16",
+        "failovermethod": "priority",
+        "gpgcheck": true,
+        "enabled": false,
+        "managed": false,
+        "make_cache": true
+      },
+      "epel-testing-debuginfo": {
+        "repositoryid": "epel-testing-debuginfo",
+        "description": "Extra Packages for 16 - $basearch - Testing Debug",
+        "mirrorlist": "http://mirrors.fedoraproject.org/mirrorlist?repo=testing-debug-epel16&arch=$basearch",
+        "gpgkey": "https://download.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-16",
+        "failovermethod": "priority",
+        "gpgcheck": true,
+        "enabled": false,
+        "managed": false,
+        "make_cache": true
+      },
+      "epel-testing-source": {
+        "repositoryid": "epel-testing-source",
+        "description": "Extra Packages for 16 - $basearch - Testing Source",
+        "mirrorlist": "http://mirrors.fedoraproject.org/mirrorlist?repo=testing-source-epel16&arch=$basearch",
+        "gpgkey": "https://download.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-16",
+        "failovermethod": "priority",
+        "gpgcheck": true,
+        "enabled": false,
+        "managed": false,
+        "make_cache": true
+      },
+      "epel-testing": {
+        "repositoryid": "epel-testing",
+        "description": "Extra Packages for 16 - $basearch - Testing ",
+        "mirrorlist": "http://mirrors.fedoraproject.org/mirrorlist?repo=testing-epel16&arch=$basearch",
+        "gpgkey": "https://download.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-16",
+        "failovermethod": "priority",
+        "gpgcheck": true,
+        "enabled": false,
+        "managed": false,
+        "make_cache": true
+      },
+      "epel": {
+        "repositoryid": "epel",
+        "description": "Extra Packages for 16 - $basearch",
+        "mirrorlist": "http://mirrors.fedoraproject.org/mirrorlist?repo=epel-16&arch=$basearch",
+        "gpgkey": "https://download.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-16",
+        "failovermethod": "priority",
+        "gpgcheck": true,
+        "enabled": true,
+        "managed": true,
+        "make_cache": true
+      }
+    },
+    "zypper": {
+      "smt_host": null
+    },
+    "nginx": {
+      "version": "1.12.1",
+      "package_name": "nginx",
+      "port": "80",
+      "dir": "/etc/nginx",
+      "script_dir": "/usr/sbin",
+      "log_dir": "/var/log/nginx",
+      "log_dir_perm": "0750",
+      "binary": "/usr/sbin/nginx",
+      "default_root": "/var/www/nginx-default",
+      "ulimit": "1024",
+      "cleanup_runit": true,
+      "repo_source": "nginx",
+      "install_method": "package",
+      "user": "www-data",
+      "upstart": {
+        "runlevels": "2345",
+        "respawn_limit": null,
+        "foreground": true
+      },
+      "group": "www-data",
+      "gzip": "on",
+      "gzip_static": "off",
+      "gzip_http_version": "1.0",
+      "gzip_comp_level": "2",
+      "gzip_proxied": "any",
+      "gzip_vary": "off",
+      "gzip_buffers": null,
+      "gzip_types": [
+        "text/plain",
+        "text/css",
+        "application/x-javascript",
+        "text/xml",
+        "application/xml",
+        "application/rss+xml",
+        "application/atom+xml",
+        "image/svg+xml",
+        "text/javascript",
+        "application/javascript",
+        "application/json",
+        "text/mathml"
+      ],
+      "gzip_min_length": 1000,
+      "gzip_disable": "MSIE [1-6]\\.",
+      "keepalive": "on",
+      "keepalive_requests": 100,
+      "keepalive_timeout": 65,
+      "worker_processes": 1,
+      "worker_connections": 1024,
+      "worker_rlimit_nofile": null,
+      "multi_accept": false,
+      "event": null,
+      "accept_mutex_delay": null,
+      "server_tokens": null,
+      "server_names_hash_bucket_size": 64,
+      "variables_hash_max_size": 1024,
+      "variables_hash_bucket_size": 64,
+      "sendfile": "on",
+      "underscores_in_headers": null,
+      "tcp_nodelay": "on",
+      "tcp_nopush": "on",
+      "access_log_options": null,
+      "error_log_options": null,
+      "disable_access_log": false,
+      "log_formats": {
+
+      },
+      "default_site_enabled": true,
+      "types_hash_max_size": 2048,
+      "types_hash_bucket_size": 64,
+      "proxy_read_timeout": null,
+      "client_body_buffer_size": null,
+      "client_max_body_size": null,
+      "large_client_header_buffers": null,
+      "default": {
+        "modules": [
+
+        ]
+      },
+      "extra_configs": {
+
+      },
+      "load_modules": [
+
+      ],
+      "auth_request": {
+        "url": "http://mdounin.ru/hg/ngx_http_auth_request_module/archive/662785733552.tar.gz",
+        "checksum": "2057bdefd2137a5000d9dbdbfca049d1ba7832ad2b9f8855a88ea5dfa70bd8c1"
+      },
+      "devel": {
+        "version": "0.3.0",
+        "url": "https://github.com/simpl/ngx_devel_kit/archive/v0.3.0.tar.gz",
+        "checksum": "88e05a99a8a7419066f5ae75966fb1efc409bad4522d14986da074554ae61619"
+      },
+      "echo": {
+        "version": "0.61",
+        "url": "https://github.com/openresty/echo-nginx-module/archive/v0.61.tar.gz",
+        "checksum": "2e6a03032555f5da1bdff2ae96c96486f447da3da37c117e0f964ae0753d22aa"
+      },
+      "geoip": {
+        "path": "/srv/geoip",
+        "enable_city": true,
+        "country_dat_url": "http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz",
+        "country_dat_checksum": null,
+        "city_dat_url": "http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz",
+        "city_dat_checksum": null,
+        "lib_version": "1.6.9",
+        "lib_url": "https://github.com/maxmind/geoip-api-c/releases/download/v1.6.9/GeoIP-1.6.9.tar.gz",
+        "lib_checksum": "4b446491843de67c1af9b887da17a3e5939e0aeed4826923a5f4bf09d845096f"
+      },
+      "headers_more": {
+        "version": "0.30",
+        "source_url": "https://github.com/openresty/headers-more-nginx-module/archive/v0.30.tar.gz",
+        "source_checksum": "2aad309a9313c21c7c06ee4e71a39c99d4d829e31c8b3e7d76f8c964ea8047f5"
+      },
+      "lua": {
+        "version": "0.10.10",
+        "url": "https://github.com/chaoslawful/lua-nginx-module/archive/v0.10.10.tar.gz",
+        "checksum": "b4acb84e2d631035a516d61830c910ef6e6485aba86096221ec745e0dbb3fbc9"
+      },
+      "luajit": {
+        "version": "2.0.4",
+        "url": "http://luajit.org/download/LuaJIT-2.0.4.tar.gz",
+        "checksum": "620fa4eb12375021bef6e4f237cbd2dd5d49e56beb414bee052c746beef1807d"
+      },
+      "naxsi": {
+        "version": "0.54",
+        "url": "https://github.com/nbs-system/naxsi/archive/0.54.tar.gz",
+        "checksum": "9cc2c09405bc71f78ef26a8b6d70afcea3fccbe8125df70cb0cfc480133daba5"
+      },
+      "openssl_source": {
+        "version": "1.0.2k",
+        "url": "http://www.openssl.org/source/openssl-1.0.2k.tar.gz"
+      },
+      "pagespeed": {
+        "version": "1.11.33.2",
+        "url": "https://github.com/pagespeed/ngx_pagespeed/archive/release-1.11.33.2-beta.tar.gz",
+        "packages": {
+          "rhel": [
+            "pcre-devel",
+            "zlib-devel"
+          ],
+          "debian": [
+            "zlib1g-dev",
+            "libpcre3",
+            "libpcre3-dev"
+          ]
+        }
+      },
+      "psol": {
+        "url": "https://dl.google.com/dl/page-speed/psol/1.11.33.2.tar.gz"
+      },
+      "passenger": {
+        "version": "4.0.57",
+        "root": "/gems/passenger-4.0.57",
+        "ruby": null,
+        "packages": {
+          "rhel": [
+            "ruby-devel",
+            "curl-devel"
+          ],
+          "fedora": [
+            "ruby-devel",
+            "libcurl-devel"
+          ],
+          "debian": [
+            "ruby-dev",
+            "libcurl4-gnutls-dev"
+          ]
+        },
+        "install_rake": true,
+        "spawn_method": "smart-lv2",
+        "buffer_response": "on",
+        "max_pool_size": 6,
+        "min_instances": 1,
+        "max_instances_per_app": 0,
+        "pool_idle_time": 300,
+        "max_requests": 0,
+        "gem_binary": null,
+        "show_version_in_header": "on",
+        "passenger_log_file": null,
+        "nodejs": null
+      },
+      "enable_rate_limiting": false,
+      "rate_limiting_zone_name": "default",
+      "rate_limiting_backoff": "10m",
+      "rate_limit": "1r/s",
+      "upstream_repository": "https://nginx.org/packages/ubuntu",
+      "repo_signing_key": "https://nginx.org/keys/nginx_signing.key",
+      "set_misc": {
+        "version": "0.30",
+        "url": "https://github.com/agentzh/set-misc-nginx-module/archive/v0.30.tar.gz",
+        "checksum": "59920dd3f92c2be32627121605751b52eae32b5884be09f2e4c53fb2fae8aabc"
+      },
+      "socketproxy": {
+        "root": "/usr/share/nginx/apps",
+        "app_owner": "root",
+        "logname": "socketproxy",
+        "log_level": "error"
+      },
+      "init_style": "systemd",
+      "source": {
+        "version": "1.12.1",
+        "prefix": "/opt/nginx-1.12.1",
+        "conf_path": "/etc/nginx/nginx.conf",
+        "sbin_path": "/opt/nginx-1.12.1/sbin/nginx",
+        "default_configure_flags": [
+          "--prefix=/opt/nginx-1.12.1",
+          "--conf-path=/etc/nginx/nginx.conf",
+          "--sbin-path=/opt/nginx-1.12.1/sbin/nginx",
+          "--with-cc-opt=\"-Wno-error\""
+        ],
+        "url": "http://nginx.org/download/nginx-1.12.1.tar.gz",
+        "checksum": "8793bf426485a30f91021b6b945a9fd8a84d87d17b566562c3797aba8fac76fb",
+        "modules": [
+          "nginx::http_ssl_module",
+          "nginx::http_gzip_static_module"
+        ],
+        "use_existing_user": false
+      },
+      "configure_flags": [
+
+      ],
+      "status": {
+        "port": "8090"
+      },
+      "syslog": {
+        "git_repo": "https://github.com/yaoweibin/nginx_syslog_patch.git",
+        "git_revision": "master"
+      },
+      "upload_progress": {
+        "url": "https://github.com/masterzen/nginx-upload-progress-module/tarball/v0.9.0",
+        "checksum": "3fb903dab595cf6656fa0fc5743a48daffbba2f6b5c554836be630800eaad4e2",
+        "javascript_output": true,
+        "zone_name": "proxied",
+        "zone_size": "1m"
+      }
+    }
+  },
+  "automatic": {
+    "  ec2": {
+
+    }
+  },
+  "run_list": [
+    "recipe[demo-tomcat]",
+    "recipe[demo-nginx]"
+  ]
+}
