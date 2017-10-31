@@ -1,35 +1,44 @@
 # Default server configuration
 #
-upstream tomcat {
-    server 127.0.0.1:9000 fail_timeout=0;
-    keepalive 8;
-}
+http {
+    proxy_cache_path  /data/nginx/cache  levels=1:2    keys_zone=STATIC:10m
+    inactive=24h  max_size=1g;
 
-server {
-	#listen 80 default_server;
-	#listen [::]:80 default_server;
+    upstream tomcat {
+        server 127.0.0.1:9000 fail_timeout=0;
+        keepalive 8;
+    }
 
-    listen 443;
-    ssl on;
-    server_name localhost;
-    ssl_certificate /etc/ssl/certs/nginx-selfsigned.crt;
-    ssl_certificate_key /etc/ssl/private/nginx-selfsigned.key;
+    server {
+        #listen 80 default_server;
+        #listen [::]:80 default_server;
 
-	root /var/www/html;
+        listen 443;
+        ssl on;
+        server_name localhost;
+        ssl_certificate /etc/ssl/certs/nginx-selfsigned.crt;
+        ssl_certificate_key /etc/ssl/private/nginx-selfsigned.key;
 
-	# Add index.php to the list if you are using PHP
-	index index.html index.htm index.nginx-debian.html;
+        root /var/www/html;
 
-	server_name _;
+        # Add index.php to the list if you are using PHP
+        index index.html index.htm index.nginx-debian.html;
 
-	location / {
-		# First attempt to serve request as file, then
-		# as directory, then fall back to displaying a 404.
-		#try_files $uri $uri/ =404;
-        proxy_pass http://tomcat/;
-        proxy_set_header Host $http_host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-	}
+        server_name _;
+
+        location / {
+            # First attempt to serve request as file, then
+            # as directory, then fall back to displaying a 404.
+            #try_files $uri $uri/ =404;
+            proxy_pass http://tomcat/;
+            proxy_set_header Host $http_host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+            proxy_cache STATIC;
+            proxy_cache_valid 200  1d;
+            proxy_cache_use_stale error timeout invalid_header updating
+                                  http_500 http_502 http_503 http_504;
+        }
+    }
 }
